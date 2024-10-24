@@ -1,0 +1,130 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Provider Class Reference}
+\hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider}{}\label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a1ed2bb889fe371625e517a1564e7072b}{Jwt\+Token\+Provider}} (@Qualifier("{}user\+Details\+Service\+Dao"{}) User\+Details\+Service user\+Details\+Service)
+\item 
+String \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_ae2b518d4399f8b8ac8e44f85bb704999}{create\+Token}} (String username, \mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1db_1_1entities_1_1_role}{Role}} role)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_aabbc02a1e74633a60f30bb471c205087}{validate\+Token}} (String token)  throws \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_authentication_exception}{Jwt\+Authentication\+Exception}} 
+\item 
+Authentication \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a1806c00e4f5b14b4ffeece76317a68f3}{get\+Authentication}} (String token)
+\item 
+String \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a5c7da37cbe57427a3dd637482ec4354f}{get\+Username}} (String token)
+\item 
+String \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a772d6c3c6aac213767bc6df48c27c9f8}{resolve\+Token}} (Http\+Servlet\+Request request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a1094aef0e9a6d3845470cfc742539e27}{init}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Обеспечивает логику по взаимодействую с JWT токеном 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a1ed2bb889fe371625e517a1564e7072b}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}!JwtTokenProvider@{JwtTokenProvider}}
+\index{JwtTokenProvider@{JwtTokenProvider}!com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}}
+\doxysubsubsection{\texorpdfstring{JwtTokenProvider()}{JwtTokenProvider()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a1ed2bb889fe371625e517a1564e7072b} 
+com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Provider.\+Jwt\+Token\+Provider (\begin{DoxyParamCaption}\item[{@Qualifier("{}user\+Details\+Service\+Dao"{}) User\+Details\+Service}]{user\+Details\+Service}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Details\+Service} & сервис по работе с пользователями \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_ae2b518d4399f8b8ac8e44f85bb704999}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}!createToken@{createToken}}
+\index{createToken@{createToken}!com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}}
+\doxysubsubsection{\texorpdfstring{createToken()}{createToken()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_ae2b518d4399f8b8ac8e44f85bb704999} 
+String com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Provider.\+create\+Token (\begin{DoxyParamCaption}\item[{String}]{username}{, }\item[{\mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1db_1_1entities_1_1_role}{Role}}}]{role}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Создает токен для какого-\/то пользователя по его username и роли 
+\begin{DoxyParams}{Parameters}
+{\em username} & username пользователя \\
+\hline
+{\em role} & его роль \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+JWT токен для конкретного пользователя 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a1806c00e4f5b14b4ffeece76317a68f3}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}!getAuthentication@{getAuthentication}}
+\index{getAuthentication@{getAuthentication}!com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}}
+\doxysubsubsection{\texorpdfstring{getAuthentication()}{getAuthentication()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a1806c00e4f5b14b4ffeece76317a68f3} 
+Authentication com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Provider.\+get\+Authentication (\begin{DoxyParamCaption}\item[{String}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Возвращает аутентификацию для пользователя по его JWT токену 
+\begin{DoxyParams}{Parameters}
+{\em token} & сам токен \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+аутентификация пользователя 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a5c7da37cbe57427a3dd637482ec4354f}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}!getUsername@{getUsername}}
+\index{getUsername@{getUsername}!com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}}
+\doxysubsubsection{\texorpdfstring{getUsername()}{getUsername()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a5c7da37cbe57427a3dd637482ec4354f} 
+String com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Provider.\+get\+Username (\begin{DoxyParamCaption}\item[{String}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Возвращает username пользователя из JWT токена 
+\begin{DoxyParams}{Parameters}
+{\em token} & сам токен \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+username пользователя 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a1094aef0e9a6d3845470cfc742539e27}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}!init@{init}}
+\index{init@{init}!com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a1094aef0e9a6d3845470cfc742539e27} 
+void com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Provider.\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Этот метод вызывает для инициализации бина на этапе конфигурации. Здесь мы кодируем секретный ключ для шифрования JWT токена \Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a772d6c3c6aac213767bc6df48c27c9f8}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}!resolveToken@{resolveToken}}
+\index{resolveToken@{resolveToken}!com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}}
+\doxysubsubsection{\texorpdfstring{resolveToken()}{resolveToken()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_a772d6c3c6aac213767bc6df48c27c9f8} 
+String com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Provider.\+resolve\+Token (\begin{DoxyParamCaption}\item[{Http\+Servlet\+Request}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Возвращает токен из соответствующего заголовка в HTTP запросе клиента 
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP запрос клиента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+JWT токен 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_aabbc02a1e74633a60f30bb471c205087}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}!validateToken@{validateToken}}
+\index{validateToken@{validateToken}!com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider@{com.iffomko.voiceAssistant.security.jwt.JwtTokenProvider}}
+\doxysubsubsection{\texorpdfstring{validateToken()}{validateToken()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider_aabbc02a1e74633a60f30bb471c205087} 
+boolean com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Provider.\+validate\+Token (\begin{DoxyParamCaption}\item[{String}]{token}{}\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_authentication_exception}{Jwt\+Authentication\+Exception}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Проверяет JWT токен на корректность 
+\begin{DoxyParams}{Parameters}
+{\em token} & сам токен \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает true если токен валидный или false, если нет 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_authentication_exception}{Jwt\+Authentication\+Exception}} & выбрасывается если время токена вышла или он не валидный \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/security/jwt/Jwt\+Token\+Provider.\+java\end{DoxyCompactItemize}

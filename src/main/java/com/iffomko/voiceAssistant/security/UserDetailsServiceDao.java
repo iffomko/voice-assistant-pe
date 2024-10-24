@@ -22,10 +22,10 @@ public class UserDetailsServiceDao implements UserDetailsService {
     }
 
     /**
-     * Подгружает пользователя из базы данных по его username
-     * @param username username пользователя
-     * @return возвращает найденного пользователя (<code>UserDetails</code>)
-     * @throws UsernameNotFoundException выбрасывается если пользователь не существует
+     * Подгружает пользователя из базы данных по его имени
+     * @param username имя пользователя
+     * @return возвращает пользователя
+     * @throws UsernameNotFoundException если пользователь не существует
      */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

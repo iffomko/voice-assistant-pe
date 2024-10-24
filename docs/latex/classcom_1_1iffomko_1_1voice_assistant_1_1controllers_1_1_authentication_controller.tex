@@ -1,0 +1,85 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+controllers.\+Authentication\+Controller Class Reference}
+\hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller}{}\label{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller}\index{com.iffomko.voiceAssistant.controllers.AuthenticationController@{com.iffomko.voiceAssistant.controllers.AuthenticationController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_a6d203441c2a5301c4da4c0b85ce5e2b3}{Authentication\+Controller}} ( @Qualifier("{}authentication\+Manager"{}) Authentication\+Manager authentication\+Manager, \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1dao_1_1_user_dao}{User\+Dao}} user\+Dao, \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider}{Jwt\+Token\+Provider}} jwt\+Token\+Provider, Password\+Encoder password\+Encoder)
+\item 
+Response\+Entity$<$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1data_1_1_authentication_response_d_t_o}{Authentication\+Response\+DTO}} $>$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_a808c4ea7a19dc64371ff39f339fd34b6}{authenticate}} (@Request\+Body \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1data_1_1_authentication_request_d_t_o}{Authentication\+Request\+DTO}} body)
+\item 
+void \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_a8fa6812b9cf4dbed9fd88b5181ae77bf}{logout}} (Http\+Servlet\+Request request, Http\+Servlet\+Response response)
+\item 
+Response\+Entity$<$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1data_1_1_registration_response_d_t_o}{Registration\+Response\+DTO}} $>$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_abdc8f42f1252e56dfe5bfbeca4e354b1}{register}} (@Request\+Body \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1data_1_1_registration_request_d_t_o}{Registration\+Request\+DTO}} body)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Контроллер аутентификации. Именно здесь происходит авторизация и регистрация пользователей 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_a6d203441c2a5301c4da4c0b85ce5e2b3}\index{com.iffomko.voiceAssistant.controllers.AuthenticationController@{com.iffomko.voiceAssistant.controllers.AuthenticationController}!AuthenticationController@{AuthenticationController}}
+\index{AuthenticationController@{AuthenticationController}!com.iffomko.voiceAssistant.controllers.AuthenticationController@{com.iffomko.voiceAssistant.controllers.AuthenticationController}}
+\doxysubsubsection{\texorpdfstring{AuthenticationController()}{AuthenticationController()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_a6d203441c2a5301c4da4c0b85ce5e2b3} 
+com.\+iffomko.\+voice\+Assistant.\+controllers.\+Authentication\+Controller.\+Authentication\+Controller (\begin{DoxyParamCaption}\item[{@Qualifier("{}authentication\+Manager"{}) Authentication\+Manager}]{authentication\+Manager}{, }\item[{\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1dao_1_1_user_dao}{User\+Dao}}}]{user\+Dao}{, }\item[{\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider}{Jwt\+Token\+Provider}}}]{jwt\+Token\+Provider}{, }\item[{Password\+Encoder}]{password\+Encoder}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Конструктор, который инициализирует нужные поля объектами 
+\begin{DoxyParams}{Parameters}
+{\em authentication\+Manager} & менеджер аутентификации \\
+\hline
+{\em user\+Dao} & DAO объект, который отвечает за работу с пользователями (сущность {\ttfamily User}) \\
+\hline
+{\em jwt\+Token\+Provider} & объект {\ttfamily Jwt\+Token\+Provider}, в нем содержится вся основная логика по работе с JWT токеном \\
+\hline
+{\em password\+Encoder} & любой объект реализующий интерфейс {\ttfamily Password\+Encoder} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_a808c4ea7a19dc64371ff39f339fd34b6}\index{com.iffomko.voiceAssistant.controllers.AuthenticationController@{com.iffomko.voiceAssistant.controllers.AuthenticationController}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!com.iffomko.voiceAssistant.controllers.AuthenticationController@{com.iffomko.voiceAssistant.controllers.AuthenticationController}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_a808c4ea7a19dc64371ff39f339fd34b6} 
+Response\+Entity$<$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1data_1_1_authentication_response_d_t_o}{Authentication\+Response\+DTO}} $>$ com.\+iffomko.\+voice\+Assistant.\+controllers.\+Authentication\+Controller.\+authenticate (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1data_1_1_authentication_request_d_t_o}{Authentication\+Request\+DTO}}}]{body}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Эндпоинт, который отвечает за авторизацию пользователя в системе 
+\begin{DoxyParams}{Parameters}
+{\em body} & объект {\ttfamily Authentication\+Request\+DTO}, который содержит данные пользователя для входа в систему \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ответ {\ttfamily Response\+Entity$<$\+Authentication\+Response\+DTO$>$} 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_a8fa6812b9cf4dbed9fd88b5181ae77bf}\index{com.iffomko.voiceAssistant.controllers.AuthenticationController@{com.iffomko.voiceAssistant.controllers.AuthenticationController}!logout@{logout}}
+\index{logout@{logout}!com.iffomko.voiceAssistant.controllers.AuthenticationController@{com.iffomko.voiceAssistant.controllers.AuthenticationController}}
+\doxysubsubsection{\texorpdfstring{logout()}{logout()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_a8fa6812b9cf4dbed9fd88b5181ae77bf} 
+void com.\+iffomko.\+voice\+Assistant.\+controllers.\+Authentication\+Controller.\+logout (\begin{DoxyParamCaption}\item[{Http\+Servlet\+Request}]{request}{, }\item[{Http\+Servlet\+Response}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Эндпоинт, который позволяет выйти со системы (по сути очищает Security\+Context и делает сессию не валидной) 
+\begin{DoxyParams}{Parameters}
+{\em request} & сервлет запроса клиента \\
+\hline
+{\em response} & сервлет ответа для клиента \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_abdc8f42f1252e56dfe5bfbeca4e354b1}\index{com.iffomko.voiceAssistant.controllers.AuthenticationController@{com.iffomko.voiceAssistant.controllers.AuthenticationController}!register@{register}}
+\index{register@{register}!com.iffomko.voiceAssistant.controllers.AuthenticationController@{com.iffomko.voiceAssistant.controllers.AuthenticationController}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1_authentication_controller_abdc8f42f1252e56dfe5bfbeca4e354b1} 
+Response\+Entity$<$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1data_1_1_registration_response_d_t_o}{Registration\+Response\+DTO}} $>$ com.\+iffomko.\+voice\+Assistant.\+controllers.\+Authentication\+Controller.\+register (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1data_1_1_registration_request_d_t_o}{Registration\+Request\+DTO}}}]{body}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Регистрирует пользователя в системе 
+\begin{DoxyParams}{Parameters}
+{\em body} & объект {\ttfamily Registration\+Request\+DTO}, который содержит данные для регистрации пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+объект {\ttfamily Response\+Entity$<$\+Registration\+Response\+DTO$>$} ответа пользователю 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/controllers/Authentication\+Controller.\+java\end{DoxyCompactItemize}

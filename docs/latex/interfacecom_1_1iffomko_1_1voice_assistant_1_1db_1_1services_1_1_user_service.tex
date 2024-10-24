@@ -1,0 +1,111 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+User\+Service Interface Reference}
+\hypertarget{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service}{}\label{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service}\index{com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}}
+Inheritance diagram for com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+User\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_a0e6606e22a8e7d58fe0e5ae3ddf394b2}{add\+User}} (\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1entities_1_1_user}{User}} user)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_ab3a4bf9cd9b6d4f3da9dc9af79e84ea6}{delete\+User\+By\+Id}} (int id)
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1entities_1_1_user}{User}} \mbox{\hyperlink{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_a1c6fa61cf28568877ae891d997bde03b}{get\+User\+By\+Id}} (int id)
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1entities_1_1_user}{User}} \mbox{\hyperlink{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_aae26f2bc740b74525d4aed01e5b5f4c5}{find\+User\+By\+Username}} (String username)
+\item 
+List$<$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1entities_1_1_user}{User}} $>$ \mbox{\hyperlink{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_a4dc343eeaae0f8782f36285edcb581a1}{get\+All\+Users}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Интерфейс, который фиксирует контракт по работе с таблицей в базе данных с пользователями 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_a0e6606e22a8e7d58fe0e5ae3ddf394b2}\index{com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}!addUser@{addUser}}
+\index{addUser@{addUser}!com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily \label{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_a0e6606e22a8e7d58fe0e5ae3ddf394b2} 
+void com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+User\+Service.\+add\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1entities_1_1_user}{User}}}]{user}{}\end{DoxyParamCaption})}
+
+Добавляет нового пользователя в систему 
+\begin{DoxyParams}{Parameters}
+{\em user} & пользователь \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1dao_1_1_user_dao_ae0543f96ba577f1c782b943d443db5a5}{com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+dao.\+User\+Dao}}.
+
+\Hypertarget{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_ab3a4bf9cd9b6d4f3da9dc9af79e84ea6}\index{com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}!deleteUserById@{deleteUserById}}
+\index{deleteUserById@{deleteUserById}!com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}}
+\doxysubsubsection{\texorpdfstring{deleteUserById()}{deleteUserById()}}
+{\footnotesize\ttfamily \label{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_ab3a4bf9cd9b6d4f3da9dc9af79e84ea6} 
+boolean com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+User\+Service.\+delete\+User\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+Удаляет существующего пользователя из системы по его id 
+\begin{DoxyParams}{Parameters}
+{\em id} & уникальный идентификатор пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает либо true в случае успешного удаления, либо false в случае неудачи 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1dao_1_1_user_dao_ae70d8e479fd3908d59c16ec07da05d79}{com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+dao.\+User\+Dao}}.
+
+\Hypertarget{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_aae26f2bc740b74525d4aed01e5b5f4c5}\index{com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}!findUserByUsername@{findUserByUsername}}
+\index{findUserByUsername@{findUserByUsername}!com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}}
+\doxysubsubsection{\texorpdfstring{findUserByUsername()}{findUserByUsername()}}
+{\footnotesize\ttfamily \label{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_aae26f2bc740b74525d4aed01e5b5f4c5} 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1entities_1_1_user}{User}} com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+User\+Service.\+find\+User\+By\+Username (\begin{DoxyParamCaption}\item[{String}]{username}{}\end{DoxyParamCaption})}
+
+Возвращает пользователя по его username 
+\begin{DoxyParams}{Parameters}
+{\em username} & username пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+объект типа {\ttfamily User} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1dao_1_1_user_dao_a7d7281bccd6b7507562d1b8b2db7403d}{com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+dao.\+User\+Dao}}.
+
+\Hypertarget{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_a4dc343eeaae0f8782f36285edcb581a1}\index{com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}!getAllUsers@{getAllUsers}}
+\index{getAllUsers@{getAllUsers}!com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}}
+\doxysubsubsection{\texorpdfstring{getAllUsers()}{getAllUsers()}}
+{\footnotesize\ttfamily \label{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_a4dc343eeaae0f8782f36285edcb581a1} 
+List$<$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1entities_1_1_user}{User}} $>$ com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+User\+Service.\+get\+All\+Users (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает список всех пользователей 
+
+Implemented in \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1dao_1_1_user_dao_a826e8267e8ce61d26b66d2a3063d5c30}{com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+dao.\+User\+Dao}}.
+
+\Hypertarget{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_a1c6fa61cf28568877ae891d997bde03b}\index{com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}!getUserById@{getUserById}}
+\index{getUserById@{getUserById}!com.iffomko.voiceAssistant.db.services.UserService@{com.iffomko.voiceAssistant.db.services.UserService}}
+\doxysubsubsection{\texorpdfstring{getUserById()}{getUserById()}}
+{\footnotesize\ttfamily \label{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service_a1c6fa61cf28568877ae891d997bde03b} 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1entities_1_1_user}{User}} com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+User\+Service.\+get\+User\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+Возвращает существующего пользователя по его id 
+\begin{DoxyParams}{Parameters}
+{\em id} & уникальный идентификатор пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+объект типа {\ttfamily User} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1dao_1_1_user_dao_a7c9252852c92d0fb8c577d5080780b69}{com.\+iffomko.\+voice\+Assistant.\+db.\+services.\+dao.\+User\+Dao}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/db/services/User\+Service.\+java\end{DoxyCompactItemize}

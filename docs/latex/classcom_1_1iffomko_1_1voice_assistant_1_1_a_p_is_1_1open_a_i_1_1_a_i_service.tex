@@ -1,0 +1,90 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+AIService Class Reference}
+\hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service}{}\label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service}\index{com.iffomko.voiceAssistant.APIs.openAI.AIService@{com.iffomko.voiceAssistant.APIs.openAI.AIService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_a1cdc50008d38bbb11592c8a8c0623187}\label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_a1cdc50008d38bbb11592c8a8c0623187} 
+{\bfseries AIService} (String api\+Key)
+\item 
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_ae6905d2e7fa3e530cc9d7739c48c3b06}\label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_ae6905d2e7fa3e530cc9d7739c48c3b06} 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model}{AIModel}} {\bfseries get\+Model} ()
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1data_1_1_model_response}{Model\+Response}} \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_a2629308bc54fdd209e27afbfd2bfc241}{ask}} (int user\+Id, String message)
+\item 
+void \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_ab9f21f87289081a6f5b55b07a6cb88ae}{clear\+Messages}} (int user\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Map$<$ Integer, List$<$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1data_1_1_open_a_i_message}{Open\+AIMessage}} $>$ $>$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_ab9d46f1d1bb0e4fcf446d7910ab9a972}{get\+Users\+Messages}} ()
+\item 
+Map$<$ Integer, Date $>$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_a7b8b31635e7341b1f77fc2af257328d2}{get\+Model\+Last\+Interaction}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/сервис, который настраивает модель соответствующим образом и хранит в себе контекст пользователя в течении одного часа, который помогает модели ориентироваться в сообщениях пользователя 
+
+Также класс умеет само очищаться если время последнего взаимодействия пользователя модели с пользователем была более часа назад 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_a2629308bc54fdd209e27afbfd2bfc241}\index{com.iffomko.voiceAssistant.APIs.openAI.AIService@{com.iffomko.voiceAssistant.APIs.openAI.AIService}!ask@{ask}}
+\index{ask@{ask}!com.iffomko.voiceAssistant.APIs.openAI.AIService@{com.iffomko.voiceAssistant.APIs.openAI.AIService}}
+\doxysubsubsection{\texorpdfstring{ask()}{ask()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_a2629308bc54fdd209e27afbfd2bfc241} 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1data_1_1_model_response}{Model\+Response}} com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+AIService.\+ask (\begin{DoxyParamCaption}\item[{int}]{user\+Id}{, }\item[{String}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Перед запросом настраивает модели если это необходимо и подключается к Open\+AI API, дожидается ответ и возвращает его 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & id пользователя, который запросил ответ на свой вопрос \\
+\hline
+{\em message} & сам вопрос \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ответ на вопрос, который хранится в объекте типа {\ttfamily Model\+Response} 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_ab9f21f87289081a6f5b55b07a6cb88ae}\index{com.iffomko.voiceAssistant.APIs.openAI.AIService@{com.iffomko.voiceAssistant.APIs.openAI.AIService}!clearMessages@{clearMessages}}
+\index{clearMessages@{clearMessages}!com.iffomko.voiceAssistant.APIs.openAI.AIService@{com.iffomko.voiceAssistant.APIs.openAI.AIService}}
+\doxysubsubsection{\texorpdfstring{clearMessages()}{clearMessages()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_ab9f21f87289081a6f5b55b07a6cb88ae} 
+void com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+AIService.\+clear\+Messages (\begin{DoxyParamCaption}\item[{int}]{user\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Удаляет контекст для конкретного пользователя
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & id пользователя, контекст которого надо удалить \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_a7b8b31635e7341b1f77fc2af257328d2}\index{com.iffomko.voiceAssistant.APIs.openAI.AIService@{com.iffomko.voiceAssistant.APIs.openAI.AIService}!getModelLastInteraction@{getModelLastInteraction}}
+\index{getModelLastInteraction@{getModelLastInteraction}!com.iffomko.voiceAssistant.APIs.openAI.AIService@{com.iffomko.voiceAssistant.APIs.openAI.AIService}}
+\doxysubsubsection{\texorpdfstring{getModelLastInteraction()}{getModelLastInteraction()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_a7b8b31635e7341b1f77fc2af257328d2} 
+Map$<$ Integer, Date $>$ com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+AIService.\+get\+Model\+Last\+Interaction (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Возвращает дату последнего взаимодействия для каждого контекста, где ключ это user\+Id, а значение дата последнего взаимодействия 
+
+Если контекста для пользователя не существует, то будет возвращено null
+
+\begin{DoxyReturn}{Returns}
+сло 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_ab9d46f1d1bb0e4fcf446d7910ab9a972}\index{com.iffomko.voiceAssistant.APIs.openAI.AIService@{com.iffomko.voiceAssistant.APIs.openAI.AIService}!getUsersMessages@{getUsersMessages}}
+\index{getUsersMessages@{getUsersMessages}!com.iffomko.voiceAssistant.APIs.openAI.AIService@{com.iffomko.voiceAssistant.APIs.openAI.AIService}}
+\doxysubsubsection{\texorpdfstring{getUsersMessages()}{getUsersMessages()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service_ab9d46f1d1bb0e4fcf446d7910ab9a972} 
+Map$<$ Integer, List$<$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1data_1_1_open_a_i_message}{Open\+AIMessage}} $>$ $>$ com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+AIService.\+get\+Users\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Возвращает контекст со всеми пользователями, где ключ это user\+Id, а значение это контекст
+
+\begin{DoxyReturn}{Returns}
+контекст со всеми пользователями 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/\+APIs/open\+AI/AIService.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,43 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+controllers.\+services.\+Answer\+Service Class Reference}
+\hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1services_1_1_answer_service}{}\label{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1services_1_1_answer_service}\index{com.iffomko.voiceAssistant.controllers.services.AnswerService@{com.iffomko.voiceAssistant.controllers.services.AnswerService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1services_1_1_answer_service_a209dd234c380e14eb2e08097533213be}\label{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1services_1_1_answer_service_a209dd234c380e14eb2e08097533213be} 
+{\bfseries Answer\+Service} ( @Qualifier("{}yandex\+Client"{}) \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client}{Yandex\+Client}} yandex\+Client, @Qualifier("{}AIService"{}) \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service}{AIService}} chat\+GPT, @Qualifier("{}User\+DAO"{}) \mbox{\hyperlink{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service}{User\+Service}} user\+Service)
+\item 
+String \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1services_1_1_answer_service_a951f4a5ad0d53107df826db3399f0fde}{get\+Answer}} ( @Non\+Null String username, @Non\+Null String voice, @Non\+Null String format, @Non\+Null Boolean profanity\+Filter)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс бизнес-\/логики формирования ответа на вопрос
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1services_1_1_answer_service_a951f4a5ad0d53107df826db3399f0fde}\index{com.iffomko.voiceAssistant.controllers.services.AnswerService@{com.iffomko.voiceAssistant.controllers.services.AnswerService}!getAnswer@{getAnswer}}
+\index{getAnswer@{getAnswer}!com.iffomko.voiceAssistant.controllers.services.AnswerService@{com.iffomko.voiceAssistant.controllers.services.AnswerService}}
+\doxysubsubsection{\texorpdfstring{getAnswer()}{getAnswer()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1controllers_1_1services_1_1_answer_service_a951f4a5ad0d53107df826db3399f0fde} 
+String com.\+iffomko.\+voice\+Assistant.\+controllers.\+services.\+Answer\+Service.\+get\+Answer (\begin{DoxyParamCaption}\item[{@Non\+Null String}]{username}{, }\item[{@Non\+Null String}]{voice}{, }\item[{@Non\+Null String}]{format}{, }\item[{@Non\+Null Boolean}]{profanity\+Filter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Формирует ответ на вопрос пользователя
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & username текущего пользователя \\
+\hline
+{\em voice} & аудио-\/сообщение, в котором содержится вопрос \\
+\hline
+{\em format} & формат аудио-\/сообщения \\
+\hline
+{\em profanity\+Filter} & фильтр \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает ответ на вопрос пользователя в виде аудиосообщения 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/controllers/services/Answer\+Service.\+java\end{DoxyCompactItemize}

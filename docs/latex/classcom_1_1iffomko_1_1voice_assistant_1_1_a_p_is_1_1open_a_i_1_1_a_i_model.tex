@@ -1,0 +1,63 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+AIModel Class Reference}
+\hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model}{}\label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model}\index{com.iffomko.voiceAssistant.APIs.openAI.AIModel@{com.iffomko.voiceAssistant.APIs.openAI.AIModel}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model_ae64b8f1a282e31c4ef06b9635f34e7af}{AIModel}} (String api\+Key)
+\item 
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model_a4e07f20d755625f7a1d7163da37a59e0}\label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model_a4e07f20d755625f7a1d7163da37a59e0} 
+\mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1types_1_1_open_a_i_models}{Open\+AIModels}} {\bfseries get\+Model} ()
+\item 
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model_ab4537613d1d52cb098ace99f70571cef}\label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model_ab4537613d1d52cb098ace99f70571cef} 
+void {\bfseries set\+Model} (@Non\+Null \mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1types_1_1_open_a_i_models}{Open\+AIModels}} model)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1data_1_1_model_response}{Model\+Response}} \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model_a6a7568b4c8175b094ade8923ed46fe59}{ask}} (List$<$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1data_1_1_open_a_i_message}{Open\+AIMessage}} $>$ messages, String mess)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/репозиторий, который умеет подключаться к Open\+AI API и задавать вопросы модели 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model_ae64b8f1a282e31c4ef06b9635f34e7af}\index{com.iffomko.voiceAssistant.APIs.openAI.AIModel@{com.iffomko.voiceAssistant.APIs.openAI.AIModel}!AIModel@{AIModel}}
+\index{AIModel@{AIModel}!com.iffomko.voiceAssistant.APIs.openAI.AIModel@{com.iffomko.voiceAssistant.APIs.openAI.AIModel}}
+\doxysubsubsection{\texorpdfstring{AIModel()}{AIModel()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model_ae64b8f1a282e31c4ef06b9635f34e7af} 
+com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+AIModel.\+AIModel (\begin{DoxyParamCaption}\item[{String}]{api\+Key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Создает объект этого класса, который делает запросы к модели
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & ключ, с помощью которого можно сделать запрос \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model_a6a7568b4c8175b094ade8923ed46fe59}\index{com.iffomko.voiceAssistant.APIs.openAI.AIModel@{com.iffomko.voiceAssistant.APIs.openAI.AIModel}!ask@{ask}}
+\index{ask@{ask}!com.iffomko.voiceAssistant.APIs.openAI.AIModel@{com.iffomko.voiceAssistant.APIs.openAI.AIModel}}
+\doxysubsubsection{\texorpdfstring{ask()}{ask()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_model_a6a7568b4c8175b094ade8923ed46fe59} 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1data_1_1_model_response}{Model\+Response}} com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+AIModel.\+ask (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1data_1_1_open_a_i_message}{Open\+AIMessage}} $>$}]{messages}{, }\item[{String}]{mess}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Делает запрос к Open\+AI API к той модели, которая установлена в соответствующем поле
+
+
+\begin{DoxyParams}{Parameters}
+{\em messages} & предыдущие сообщения в переписке \\
+\hline
+{\em mess} & текущий вопрос к модели \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает ответ модели типа {\ttfamily Model\+Response} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/\+APIs/open\+AI/AIModel.\+java\end{DoxyCompactItemize}

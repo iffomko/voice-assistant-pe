@@ -16,7 +16,7 @@ public class JwtAuthenticationException extends RuntimeException {
     }
 
     /**
-     * Возвращает сообщение ошибки
+     * сообщение ошибки
      */
     @Override
     public String getMessage() {
@@ -24,7 +24,7 @@ public class JwtAuthenticationException extends RuntimeException {
     }
 
     /**
-     * Возвращает статус ошибки
+     * статус ошибки
      */
     public HttpStatus getStatus() {
         return status;

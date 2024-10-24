@@ -1,0 +1,52 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+Clear\+Messages\+Garber Class Reference}
+\hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_clear_messages_garber}{}\label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_clear_messages_garber}\index{com.iffomko.voiceAssistant.APIs.openAI.ClearMessagesGarber@{com.iffomko.voiceAssistant.APIs.openAI.ClearMessagesGarber}}
+Inheritance diagram for com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+Clear\+Messages\+Garber\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_clear_messages_garber}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_clear_messages_garber_a61204d9de41de4de0c13964febb24f85}{Clear\+Messages\+Garber}} (@Non\+Null \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service}{AIService}} service, @Non\+Null int timeout)
+\item 
+void \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_clear_messages_garber_a879d1cb28fb923cce441ca36390cea80}{run}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Этот класс отвечает за очистку сообщений в объектах \doxylink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service}{AIService}. Он очищает сообщения если срок последнего взаимодействия в этом чате на текущий момент больше 1 часа. 
+
+Этот класс реализуется интерфейс {\ttfamily Runnable}, следовательно его нужно запускать в отдельном потоке, потому что иначе программа просто зависнет. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_clear_messages_garber_a61204d9de41de4de0c13964febb24f85}\index{com.iffomko.voiceAssistant.APIs.openAI.ClearMessagesGarber@{com.iffomko.voiceAssistant.APIs.openAI.ClearMessagesGarber}!ClearMessagesGarber@{ClearMessagesGarber}}
+\index{ClearMessagesGarber@{ClearMessagesGarber}!com.iffomko.voiceAssistant.APIs.openAI.ClearMessagesGarber@{com.iffomko.voiceAssistant.APIs.openAI.ClearMessagesGarber}}
+\doxysubsubsection{\texorpdfstring{ClearMessagesGarber()}{ClearMessagesGarber()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_clear_messages_garber_a61204d9de41de4de0c13964febb24f85} 
+com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+Clear\+Messages\+Garber.\+Clear\+Messages\+Garber (\begin{DoxyParamCaption}\item[{@Non\+Null \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_a_i_service}{AIService}}}]{service}{, }\item[{@Non\+Null int}]{timeout}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Конструктор класса {\ttfamily \doxylink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_clear_messages_garber}{Clear\+Messages\+Garber}}. Он устанавливает время через которое этот класс будет производить очистку, а также сам сервис, в котором будет производится очистка. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em service} & сервис, в котором будет производиться очистка \\
+\hline
+{\em timeout} & время через которое будет производиться очистка \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_clear_messages_garber_a879d1cb28fb923cce441ca36390cea80}\index{com.iffomko.voiceAssistant.APIs.openAI.ClearMessagesGarber@{com.iffomko.voiceAssistant.APIs.openAI.ClearMessagesGarber}!run@{run}}
+\index{run@{run}!com.iffomko.voiceAssistant.APIs.openAI.ClearMessagesGarber@{com.iffomko.voiceAssistant.APIs.openAI.ClearMessagesGarber}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1open_a_i_1_1_clear_messages_garber_a879d1cb28fb923cce441ca36390cea80} 
+void com.\+iffomko.\+voice\+Assistant.\+APIs.\+open\+AI.\+Clear\+Messages\+Garber.\+run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Когда объект реализуется интерфейс {\ttfamily Runnable} этот метод используется для создания потока, при запуске потока {\ttfamily run} метод этого объекта будет вызван в отдельно исполняющем потоке 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/\+APIs/open\+AI/Clear\+Messages\+Garber.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,96 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Client Class Reference}
+\hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client}{}\label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client}\index{com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_a458950c1db56534a3a710f2ae10a2ddd}{Yandex\+Client}} (String api\+Key)
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition}{Yandex\+Recognition}} \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_ada55b8542eea89c4a2106fb2fb08482b}{get\+Recognition}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_synthesis}{Yandex\+Synthesis}} \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_aac591ff4a188ec93ba1fb522142c272c}{get\+Synthesis}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1data_1_1_recognition_response}{Recognition\+Response}} \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_acc4238460d858d1ad8b1aade8bf8f789}{recognise}} (byte\mbox{[}$\,$\mbox{]} voice)
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_a78f6f4be57ddc5d52392814c8b1c14d2}{synthesis}} (String text)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клиент, который позволяет обращаться к Yandex API за распознаванием и синтезированием голоса
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_a458950c1db56534a3a710f2ae10a2ddd}\index{com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}!YandexClient@{YandexClient}}
+\index{YandexClient@{YandexClient}!com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}}
+\doxysubsubsection{\texorpdfstring{YandexClient()}{YandexClient()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_a458950c1db56534a3a710f2ae10a2ddd} 
+com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Client.\+Yandex\+Client (\begin{DoxyParamCaption}\item[{String}]{api\+Key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Создает класс \doxylink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client}{Yandex\+Client} и заполняет его поля нужными значениями
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & ключ от Yandex API \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_ada55b8542eea89c4a2106fb2fb08482b}\index{com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}!getRecognition@{getRecognition}}
+\index{getRecognition@{getRecognition}!com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}}
+\doxysubsubsection{\texorpdfstring{getRecognition()}{getRecognition()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_ada55b8542eea89c4a2106fb2fb08482b} 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition}{Yandex\+Recognition}} com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Client.\+get\+Recognition (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Возвращает объект, который занимается распознаванием голоса. С помощью этого метода можно только настроить этот объект по свои нужды. 
+
+\begin{DoxyReturn}{Returns}
+объект для распознавания голоса 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_aac591ff4a188ec93ba1fb522142c272c}\index{com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}!getSynthesis@{getSynthesis}}
+\index{getSynthesis@{getSynthesis}!com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}}
+\doxysubsubsection{\texorpdfstring{getSynthesis()}{getSynthesis()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_aac591ff4a188ec93ba1fb522142c272c} 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_synthesis}{Yandex\+Synthesis}} com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Client.\+get\+Synthesis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Возвращает объект, который занимается синтезированием голоса. С помощью этого метода можно только настроить этот объект по свои нужды. 
+
+\begin{DoxyReturn}{Returns}
+объект для синтезирования голоса 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_acc4238460d858d1ad8b1aade8bf8f789}\index{com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}!recognise@{recognise}}
+\index{recognise@{recognise}!com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}}
+\doxysubsubsection{\texorpdfstring{recognise()}{recognise()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_acc4238460d858d1ad8b1aade8bf8f789} 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1data_1_1_recognition_response}{Recognition\+Response}} com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Client.\+recognise (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{voice}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод, который позволяет распознать речь в входящем аудио
+
+
+\begin{DoxyParams}{Parameters}
+{\em voice} & входящее аудио в виде массива байтов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+объект {\ttfamily Recognition\+Response}, в котором содержится в поле {\ttfamily result} распознанный текст 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_a78f6f4be57ddc5d52392814c8b1c14d2}\index{com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}!synthesis@{synthesis}}
+\index{synthesis@{synthesis}!com.iffomko.voiceAssistant.APIs.speech.YandexClient@{com.iffomko.voiceAssistant.APIs.speech.YandexClient}}
+\doxysubsubsection{\texorpdfstring{synthesis()}{synthesis()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_client_a78f6f4be57ddc5d52392814c8b1c14d2} 
+byte\mbox{[}$\,$\mbox{]} com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Client.\+synthesis (\begin{DoxyParamCaption}\item[{String}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод, который позволяет синтезировать речь
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & текст, который надо озвучить \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+массив байтов синтезированной речи 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/\+APIs/speech/Yandex\+Client.\+java\end{DoxyCompactItemize}

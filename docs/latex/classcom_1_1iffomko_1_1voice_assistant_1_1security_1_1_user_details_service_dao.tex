@@ -1,0 +1,46 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+security.\+User\+Details\+Service\+Dao Class Reference}
+\hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1_user_details_service_dao}{}\label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1_user_details_service_dao}\index{com.iffomko.voiceAssistant.security.UserDetailsServiceDao@{com.iffomko.voiceAssistant.security.UserDetailsServiceDao}}
+Inheritance diagram for com.\+iffomko.\+voice\+Assistant.\+security.\+User\+Details\+Service\+Dao\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1_user_details_service_dao}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1_user_details_service_dao_ad4fd572cef6333fd53c57affe7be422f}\label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1_user_details_service_dao_ad4fd572cef6333fd53c57affe7be422f} 
+{\bfseries User\+Details\+Service\+Dao} (@Qualifier("{}User\+DAO"{}) \mbox{\hyperlink{interfacecom_1_1iffomko_1_1voice_assistant_1_1db_1_1services_1_1_user_service}{User\+Service}} user\+Service)
+\item 
+User\+Details \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1_user_details_service_dao_a00705878e57fd7bbc18b1085f2b62d89}{load\+User\+By\+Username}} (String username)  throws Username\+Not\+Found\+Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Реализует интерфейс для взаимодействия с {\ttfamily User\+Details} и умеет подгружать пользователя по его username 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1_user_details_service_dao_a00705878e57fd7bbc18b1085f2b62d89}\index{com.iffomko.voiceAssistant.security.UserDetailsServiceDao@{com.iffomko.voiceAssistant.security.UserDetailsServiceDao}!loadUserByUsername@{loadUserByUsername}}
+\index{loadUserByUsername@{loadUserByUsername}!com.iffomko.voiceAssistant.security.UserDetailsServiceDao@{com.iffomko.voiceAssistant.security.UserDetailsServiceDao}}
+\doxysubsubsection{\texorpdfstring{loadUserByUsername()}{loadUserByUsername()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1_user_details_service_dao_a00705878e57fd7bbc18b1085f2b62d89} 
+User\+Details com.\+iffomko.\+voice\+Assistant.\+security.\+User\+Details\+Service\+Dao.\+load\+User\+By\+Username (\begin{DoxyParamCaption}\item[{String}]{username}{}\end{DoxyParamCaption}) throws Username\+Not\+Found\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Подгружает пользователя из базы данных по его имени 
+\begin{DoxyParams}{Parameters}
+{\em username} & имя пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает пользователя 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Username\+Not\+Found\+Exception} & если пользователь не существует \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/security/User\+Details\+Service\+Dao.\+java\end{DoxyCompactItemize}

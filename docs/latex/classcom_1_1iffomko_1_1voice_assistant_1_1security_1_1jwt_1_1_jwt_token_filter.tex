@@ -1,0 +1,55 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Filter Class Reference}
+\hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_filter}{}\label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_filter}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenFilter@{com.iffomko.voiceAssistant.security.jwt.JwtTokenFilter}}
+Inheritance diagram for com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Filter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_filter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_filter_aed57ce179f0fe73a82fdf2d9eb612eb4}{Jwt\+Token\+Filter}} (\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider}{Jwt\+Token\+Provider}} jwt\+Token\+Provider)
+\item 
+void \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_filter_a382490f3399bde456f5d1934fa38869f}{do\+Filter}} (Servlet\+Request servlet\+Request, Servlet\+Response servlet\+Response, Filter\+Chain filter\+Chain)  throws IOException, Servlet\+Exception     
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Фильтр, который спрашивает аутентификацию у всех запросов. Если её нет, то дальше он запрос не пропускает 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_filter_aed57ce179f0fe73a82fdf2d9eb612eb4}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenFilter@{com.iffomko.voiceAssistant.security.jwt.JwtTokenFilter}!JwtTokenFilter@{JwtTokenFilter}}
+\index{JwtTokenFilter@{JwtTokenFilter}!com.iffomko.voiceAssistant.security.jwt.JwtTokenFilter@{com.iffomko.voiceAssistant.security.jwt.JwtTokenFilter}}
+\doxysubsubsection{\texorpdfstring{JwtTokenFilter()}{JwtTokenFilter()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_filter_aed57ce179f0fe73a82fdf2d9eb612eb4} 
+com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Filter.\+Jwt\+Token\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_provider}{Jwt\+Token\+Provider}}}]{jwt\+Token\+Provider}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Инициализирует поля нужными значениями 
+\begin{DoxyParams}{Parameters}
+{\em jwt\+Token\+Provider} & объект по работе с JWT токеном \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_filter_a382490f3399bde456f5d1934fa38869f}\index{com.iffomko.voiceAssistant.security.jwt.JwtTokenFilter@{com.iffomko.voiceAssistant.security.jwt.JwtTokenFilter}!doFilter@{doFilter}}
+\index{doFilter@{doFilter}!com.iffomko.voiceAssistant.security.jwt.JwtTokenFilter@{com.iffomko.voiceAssistant.security.jwt.JwtTokenFilter}}
+\doxysubsubsection{\texorpdfstring{doFilter()}{doFilter()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1security_1_1jwt_1_1_jwt_token_filter_a382490f3399bde456f5d1934fa38869f} 
+void com.\+iffomko.\+voice\+Assistant.\+security.\+jwt.\+Jwt\+Token\+Filter.\+do\+Filter (\begin{DoxyParamCaption}\item[{Servlet\+Request}]{servlet\+Request}{, }\item[{Servlet\+Response}]{servlet\+Response}{, }\item[{Filter\+Chain}]{filter\+Chain}{}\end{DoxyParamCaption}) throws IOException, Servlet\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Этот методы вызывает при обработке цепочки фильтров 
+\begin{DoxyParams}{Parameters}
+{\em servlet\+Request} & запрос, который проходит обработку фильтров \\
+\hline
+{\em servlet\+Response} & ответ на запрос, который проходит обработку фильтров \\
+\hline
+{\em filter\+Chain} & цепочка фильтров \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/security/jwt/Jwt\+Token\+Filter.\+java\end{DoxyCompactItemize}

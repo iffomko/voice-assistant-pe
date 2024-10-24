@@ -1,0 +1,173 @@
+\doxysection{com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition Class Reference}
+\hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition}{}\label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a7a41405d1eaab3abc92cb0d92beb7bdc}{Yandex\+Recognition}} (String api\+Key)
+\item 
+\mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1types_1_1_yandex_language}{Yandex\+Language}} \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a2ae73d8b67aa2bf409cf832008689a78}{get\+Lang}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a47d7644908c678fa698606a95ee60d1b}{set\+Lang}} (\mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1types_1_1_yandex_language}{Yandex\+Language}} lang)
+\item 
+\mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1types_1_1_yandex_topic}{Yandex\+Topic}} \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a32f230fceac12817259271dbc2d8aa5f}{get\+Topic}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a578194a9d950a21372457031ec20453a}{set\+Topic}} (\mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1types_1_1_yandex_topic}{Yandex\+Topic}} topic)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_af4c11dd8420c5bcb3e6a585f20490168}{is\+Profanity\+Filter}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_ae5b414a9e7e214af5cf9b9b1dd3162b6}{set\+Profanity\+Filter}} (@Non\+Null boolean profanity\+Filter)
+\item 
+String \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a945a92640e68a78860b1b61e2c3d893c}{get\+Format}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a157c1abb7edecd097924278aaab6a6eb}{set\+Format}} (@Non\+Null String format)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a7fc2e5243451140109340139f65ade0d}\label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a7fc2e5243451140109340139f65ade0d} 
+static final String {\bfseries URL} = "{}https\+://stt.\+api.\+cloud.\+yandex.\+net/speech/v1/stt\+:recognize"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1data_1_1_recognition_response}{Recognition\+Response}} \mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a8087a587c8b1ef48af21555de6613462}{recognition}} (byte\mbox{[}$\,$\mbox{]} voice)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, который умеет делать запросы к Yandex API и с её помощью синтезировать речь
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a7a41405d1eaab3abc92cb0d92beb7bdc}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}!YandexRecognition@{YandexRecognition}}
+\index{YandexRecognition@{YandexRecognition}!com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection{\texorpdfstring{YandexRecognition()}{YandexRecognition()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a7a41405d1eaab3abc92cb0d92beb7bdc} 
+com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition.\+Yandex\+Recognition (\begin{DoxyParamCaption}\item[{String}]{api\+Key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Конструктор, который принимает ключ от Yandex API, чтобы можно авторизоваться с его помощью в системе
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & ключ от Yandex API для авторизации \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a945a92640e68a78860b1b61e2c3d893c}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}!getFormat@{getFormat}}
+\index{getFormat@{getFormat}!com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection{\texorpdfstring{getFormat()}{getFormat()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a945a92640e68a78860b1b61e2c3d893c} 
+String com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition.\+get\+Format (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Возвращает формат входного аудио (mp3, oggopus, lpcm)
+
+\begin{DoxyReturn}{Returns}
+возвращает формат входящего аудио 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a2ae73d8b67aa2bf409cf832008689a78}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}!getLang@{getLang}}
+\index{getLang@{getLang}!com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection{\texorpdfstring{getLang()}{getLang()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a2ae73d8b67aa2bf409cf832008689a78} 
+\mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1types_1_1_yandex_language}{Yandex\+Language}} com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition.\+get\+Lang (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Возвращает язык, который нужно распознавать, в настройках этого класса
+
+\begin{DoxyReturn}{Returns}
+объект {\ttfamily Yandex\+Language}, который содержит распознаваемый язык 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a32f230fceac12817259271dbc2d8aa5f}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}!getTopic@{getTopic}}
+\index{getTopic@{getTopic}!com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection{\texorpdfstring{getTopic()}{getTopic()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a32f230fceac12817259271dbc2d8aa5f} 
+\mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1types_1_1_yandex_topic}{Yandex\+Topic}} com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition.\+get\+Topic (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Возвращает название модели распознавания в настройках этого класса
+
+\begin{DoxyReturn}{Returns}
+объект {\ttfamily Yandex\+Topic}, содержащий название модели распознавания 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_af4c11dd8420c5bcb3e6a585f20490168}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}!isProfanityFilter@{isProfanityFilter}}
+\index{isProfanityFilter@{isProfanityFilter}!com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection{\texorpdfstring{isProfanityFilter()}{isProfanityFilter()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_af4c11dd8420c5bcb3e6a585f20490168} 
+boolean com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition.\+is\+Profanity\+Filter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Возвращает значение поля profanity\+Filter. Если установлен {\ttfamily false}, то ненормативная лексика не будет исключена из распознавания. Если установлен {\ttfamily true}, то нормативная лекция будет исключена из распознавания. 
+
+\begin{DoxyReturn}{Returns}
+возвращает значение поля profanity\+Filter 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a8087a587c8b1ef48af21555de6613462}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}!recognition@{recognition}}
+\index{recognition@{recognition}!com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection{\texorpdfstring{recognition()}{recognition()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a8087a587c8b1ef48af21555de6613462} 
+\mbox{\hyperlink{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1data_1_1_recognition_response}{Recognition\+Response}} com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition.\+recognition (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{voice}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Делает запрос к Yandex API за распознаванием речи по входному аудио
+
+
+\begin{DoxyParams}{Parameters}
+{\em voice} & массив байтов аудио, которое нужно распознать \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+объект {\ttfamily Recognition\+Response}, содержащий единственное поле {\ttfamily result} с распознанным текстом 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a157c1abb7edecd097924278aaab6a6eb}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}!setFormat@{setFormat}}
+\index{setFormat@{setFormat}!com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection{\texorpdfstring{setFormat()}{setFormat()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a157c1abb7edecd097924278aaab6a6eb} 
+void com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition.\+set\+Format (\begin{DoxyParamCaption}\item[{@Non\+Null String}]{format}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Устанавливает формат входного аудио в настройках этого класса
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & формат входящего аудио (mp3, oggopus, lpcm) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a47d7644908c678fa698606a95ee60d1b}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}!setLang@{setLang}}
+\index{setLang@{setLang}!com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection{\texorpdfstring{setLang()}{setLang()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a47d7644908c678fa698606a95ee60d1b} 
+void com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition.\+set\+Lang (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1types_1_1_yandex_language}{Yandex\+Language}}}]{lang}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Устанавливает распознаваемый язык для текущих настроек класса
+
+
+\begin{DoxyParams}{Parameters}
+{\em lang} & объект {\ttfamily Yandex\+Language}, содержащий распознаваемый язык \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_ae5b414a9e7e214af5cf9b9b1dd3162b6}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}!setProfanityFilter@{setProfanityFilter}}
+\index{setProfanityFilter@{setProfanityFilter}!com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection{\texorpdfstring{setProfanityFilter()}{setProfanityFilter()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_ae5b414a9e7e214af5cf9b9b1dd3162b6} 
+void com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition.\+set\+Profanity\+Filter (\begin{DoxyParamCaption}\item[{@Non\+Null boolean}]{profanity\+Filter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Устанавливает значение {\ttfamily true} или {\ttfamily false} для поля profanity\+Filter. Если установлен {\ttfamily false}, то ненормативная лексика не будет исключена из распознавания. Если установлен {\ttfamily true}, то нормативная лекция будет исключена из распознавания. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em profanity\+Filter} & {\ttfamily true} или {\ttfamily false} -\/ значение, которое нужно установить полю \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a578194a9d950a21372457031ec20453a}\index{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}!setTopic@{setTopic}}
+\index{setTopic@{setTopic}!com.iffomko.voiceAssistant.APIs.speech.YandexRecognition@{com.iffomko.voiceAssistant.APIs.speech.YandexRecognition}}
+\doxysubsubsection{\texorpdfstring{setTopic()}{setTopic()}}
+{\footnotesize\ttfamily \label{classcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1_yandex_recognition_a578194a9d950a21372457031ec20453a} 
+void com.\+iffomko.\+voice\+Assistant.\+APIs.\+speech.\+Yandex\+Recognition.\+set\+Topic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumcom_1_1iffomko_1_1voice_assistant_1_1_a_p_is_1_1speech_1_1types_1_1_yandex_topic}{Yandex\+Topic}}}]{topic}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Устанавливает модель распознавания для настроек этого класса
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & объект {\ttfamily Yandex\+Topic}, содержащий название модели распознавания \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+One\+Drive/Документы/git-\/projects/voice-\/assistant-\/pe/src/main/java/com/iffomko/voice\+Assistant/\+APIs/speech/Yandex\+Recognition.\+java\end{DoxyCompactItemize}
